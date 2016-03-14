@@ -1,0 +1,18 @@
+application: your-app-id
+version: new-site-v1
+runtime: php55
+api_version: 1
+
+handlers:
+
+- url: /static
+  static_dir: static
+
+- url: /game.php
+  script: game.php  
+  
+- url: /petition.php
+  script: petition.php  
+
+- url: /.*
+  script: index.php
